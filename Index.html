@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +43,28 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="project">
-        <img src="Images/climate_change_analysis/temperature_change_plot(ML).png" alt="Project 1">
+        <section id="slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="Images/climate_change_analysis/temperature_change_plot(ML).png" alt="Slide 1">
+                    <div class="caption">Using Machine Learning to predict future temperature rise</div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/climate_change_analysis/tableaudashboard.png" alt="Slide 2">
+                  <div class="caption">Tableau dashboard</div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/climate_change_analysis/Natural_Disaster_by_year.png" alt="Slide 3">
+                  <div class="caption">Rise of Natural Disasters</div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div> 
+            <div class="swiper-button-prev"></div> 
+            </div>
+          </section>
+          
+        
         <h3>Climate Change Analysis</h3>
         <p>Climate change impacts us all. Industries are now including Sustainability as a core value of their visions and using data analytics to drive meaningful decision making towards a greener future
             This project provides an example of how machine learning can be used as a tool to predict future warming trends and the impact of them on our world
@@ -80,12 +103,15 @@
       </form>
     </div>
   </section>
-
+  
   <footer>
     <div class="container">
       <p>&copy; 2023 Dianne Etmanski. All rights reserved.</p>
     </div>
+    <script type="text/javascript" src="static/js/app.js"></script>
   </footer>
 </body>
+
+
 
 </html>
